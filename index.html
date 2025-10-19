@@ -1110,7 +1110,7 @@
             if (indexText < textLetterH2.length) {
                 textLetter.textContent += textLetterH2[indexText];
                 indexText++;
-                setTimeout(indexText, 100);
+                setTimeout(indexText, 1);
             }
             else {
                 clearInterval(timoutTextLetter);
@@ -1125,7 +1125,7 @@
             clearInterval(timoutTextLetter);
             timoutTextLetter = setInterval(() => {
                 textCharLetter();
-            }, 200)
+            }, 2)
         }
 
         // chữ của thư bạn muốn gửi
@@ -1150,7 +1150,7 @@
             clearInterval(timoutTextLetterContent);
             timoutTextLetterContent = setInterval(() => {
                 textCharLetterContent();
-            }, 100)
+            }, 1)
         }
         $(document).ready(function () {
             $('.valentines').mouseenter(function () {
